@@ -1,0 +1,23 @@
+﻿<Window x:Class="Obrazki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Obrazki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid Columns="3">
+
+        
+            <Button x:Name="lewo" Click="Button_click">
+            <Image x:Name="obr_lewo" Source="lewo.jpg"></Image>
+            </Button>
+        <Image x:Name="obr_ryby"></Image>
+        <Button x:Name="prawo" Click="prawo_Click">
+            <Image x:Name="obr_prawo" Source="prawo.jpg"></Image>
+                    </Button>
+        <TextBlock x:Name="blok">Ilość polubień</TextBlock>
+        <Button x:Name="polubienia" Click="polubienia_Click" Margin="15">Polub</Button>
+
+    </UniformGrid>
+</Window>
